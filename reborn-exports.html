@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Reborn Exports Private Limited | Official Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0B1929;
+  --navy2:#152B45;
+  --navy3:#1E3A5F;
+  --gold:#C8A951;
+  --gold2:#E2C97E;
+  --gold3:#F5E6B8;
+  --ivory:#F8F5EF;
+  --ivory2:#F0EBE1;
+  --white:#FFFFFF;
+  --text:#1A1A2E;
+  --text2:#4A5568;
+  --text3:#8A95A3;
+  --green:#059669;
+  --green-bg:#ECFDF5;
+  --border:#E5DFD3;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--ivory);color:var(--text);line-height:1.6;overflow-x:hidden}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--navy)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;width:100%;z-index:200;
+  background:rgba(11,25,41,0.96);backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(200,169,81,0.18);
+  padding:0 6%;height:70px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.nav-logo-mark{
+  width:38px;height:38px;border-radius:2px;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Playfair Display',serif;font-weight:900;
+  font-size:1rem;color:var(--navy);letter-spacing:-0.02em;
+}
+.nav-brand-text{line-height:1.2}
+.nav-brand-name{font-family:'Playfair Display',serif;font-weight:700;font-size:0.95rem;color:var(--white)}
+.nav-brand-sub{font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,169,81,0.6);font-weight:500}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.78rem;font-weight:500;letter-spacing:0.07em;text-transform:uppercase;transition:color 0.2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{
+  background:var(--gold);color:var(--navy);
+  padding:0.5rem 1.2rem;font-size:0.75rem;font-weight:700;
+  letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;
+  border-radius:2px;transition:background 0.2s;white-space:nowrap;
+}
+.nav-cta:hover{background:var(--gold2)}
+
+/* ── HERO ── */
+.hero{
+  min-height:100vh;
+  background:linear-gradient(150deg,var(--navy) 0%,var(--navy2) 50%,#081420 100%);
+  display:flex;align-items:center;
+  padding:110px 6% 80px;
+  position:relative;overflow:hidden;
+}
+.hero-bg-pattern{
+  position:absolute;inset:0;
+  background-image:radial-gradient(circle at 20% 80%,rgba(200,169,81,0.06) 0%,transparent 50%),
+    radial-gradient(circle at 80% 20%,rgba(200,169,81,0.04) 0%,transparent 50%);
+  pointer-events:none;
+}
+.hero-grid-lines{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(200,169,81,0.04) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(200,169,81,0.04) 1px,transparent 1px);
+  background-size:60px 60px;
+  pointer-events:none;
+}
+.hero-content{position:relative;z-index:1;max-width:680px}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:10px;
+  background:rgba(200,169,81,0.1);border:1px solid rgba(200,169,81,0.25);
+  padding:6px 14px;border-radius:999px;
+  font-size:0.68rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:2rem;
+}
+.hero-tag::before{content:'●';font-size:0.5rem;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(2.6rem,5.5vw,4.2rem);
+  font-weight:900;line-height:1.08;
+  color:var(--white);margin-bottom:1.5rem;
+  letter-spacing:-0.02em;
+}
+.hero h1 .accent{
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.hero-desc{
+  font-size:1rem;color:rgba(255,255,255,0.6);
+  line-height:1.85;margin-bottom:2.8rem;font-weight:300;max-width:520px;
+}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:4rem}
+.btn-gold{
+  background:var(--gold);color:var(--navy);
+  padding:0.9rem 2.2rem;border-radius:2px;
+  font-weight:700;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;
+  text-decoration:none;transition:all 0.2s;border:2px solid var(--gold);
+  display:inline-flex;align-items:center;gap:8px;
+}
+.btn-gold:hover{background:var(--gold2);border-color:var(--gold2)}
+.btn-ghost{
+  background:transparent;color:rgba(255,255,255,0.75);
+  padding:0.9rem 2.2rem;border-radius:2px;
+  font-weight:600;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;
+  text-decoration:none;transition:all 0.2s;border:2px solid rgba(255,255,255,0.2);
+}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.hero-metrics{display:flex;gap:3rem;flex-wrap:wrap}
+.metric{border-left:2px solid rgba(200,169,81,0.4);padding-left:1.2rem}
+.metric-num{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--white);line-height:1}
+.metric-label{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:4px}
+.hero-visual{
+  position:absolute;right:6%;top:50%;transform:translateY(-50%);
+  width:340px;z-index:1;
+}
+.hero-card{
+  background:rgba(255,255,255,0.04);border:1px solid rgba(200,169,81,0.2);
+  backdrop-filter:blur(10px);padding:2rem;border-radius:4px;
+  position:relative;
+}
+.hero-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--gold2),transparent);
+}
+.hc-title{font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;font-weight:600}
+.hc-row{display:flex;justify-content:space-between;align-items:flex-start;padding:0.7rem 0;border-bottom:1px solid rgba(255,255,255,0.06);gap:1rem}
+.hc-row:last-child{border-bottom:none}
+.hc-key{font-size:0.72rem;color:rgba(255,255,255,0.4);flex-shrink:0}
+.hc-val{font-size:0.78rem;color:rgba(255,255,255,0.85);font-weight:500;text-align:right}
+.hc-val.green{color:#34D399}
+.hc-val.gold{color:var(--gold)}
+
+/* ── SECTIONS ── */
+section{padding:96px 6%}
+.eyebrow{font-size:0.67rem;font-weight:700;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem}
+.section-h{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.2vw,2.7rem);font-weight:700;line-height:1.18;color:var(--navy);margin-bottom:1.2rem}
+.section-p{font-size:1rem;color:var(--text2);max-width:560px;line-height:1.85;margin-bottom:3rem;font-weight:300}
+
+/* ── ABOUT ── */
+.about{background:var(--white)}
+.about-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.about-img{
+  background:linear-gradient(135deg,var(--navy),var(--navy3));
+  aspect-ratio:4/5;border-radius:4px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+}
+.about-img::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:5px;
+  background:linear-gradient(90deg,var(--gold),var(--gold2));
+}
+.about-watermark{
+  font-family:'Playfair Display',serif;font-size:11rem;font-weight:900;
+  color:rgba(255,255,255,0.035);letter-spacing:-0.06em;user-select:none;line-height:1;
+}
+.about-stamp{
+  position:absolute;bottom:2.5rem;right:2.5rem;
+  background:var(--gold);color:var(--navy);
+  padding:0.7rem 1.3rem;font-size:0.68rem;
+  font-weight:700;letter-spacing:0.15em;text-transform:uppercase;border-radius:2px;
+}
+.about-since{
+  position:absolute;top:2rem;left:2rem;
+  border:1px solid rgba(200,169,81,0.3);padding:0.8rem 1.2rem;
+}
+.about-since-num{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--gold);line-height:1}
+.about-since-text{font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:3px}
+.about-points{list-style:none;display:flex;flex-direction:column;gap:1rem;margin-top:1.5rem}
+.about-points li{
+  display:flex;gap:1rem;align-items:flex-start;
+  font-size:0.9rem;color:var(--text2);line-height:1.6;
+}
+.about-points li .dot{
+  width:22px;height:22px;border-radius:50%;background:rgba(200,169,81,0.12);border:1.5px solid rgba(200,169,81,0.35);
+  flex-shrink:0;display:flex;align-items:center;justify-content:center;
+  font-size:0.55rem;color:var(--gold);margin-top:1px;
+}
+
+/* ── INFO GRID ── */
+.info{background:var(--ivory)}
+.info-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+  border:1.5px solid var(--border);border-radius:4px;overflow:hidden;
+}
+.info-cell{
+  padding:1.8rem;border-right:1.5px solid var(--border);border-bottom:1.5px solid var(--border);
+  background:var(--white);transition:background 0.15s;
+}
+.info-cell:hover{background:#fdfaf4}
+.ic-label{font-size:0.63rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--text3);margin-bottom:0.45rem}
+.ic-val{font-size:0.92rem;font-weight:600;color:var(--navy);line-height:1.45}
+.ic-val.big{font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--gold)}
+.ic-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--green-bg);color:var(--green);
+  padding:3px 10px;border-radius:999px;font-size:0.68rem;font-weight:700;letter-spacing:0.06em;
+}
+.ic-badge::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--green)}
+
+/* ── DIRECTORS ── */
+.directors{background:var(--navy)}
+.directors .eyebrow{color:rgba(200,169,81,0.7)}
+.directors .section-h{color:var(--white)}
+.directors .section-p{color:rgba(255,255,255,0.45)}
+.dir-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-bottom:3rem}
+.dir-card{
+  border:1px solid rgba(200,169,81,0.18);padding:2.5rem 2rem;
+  position:relative;transition:border-color 0.2s,background 0.2s;
+  background:rgba(255,255,255,0.02);border-radius:3px;
+}
+.dir-card:hover{border-color:rgba(200,169,81,0.45);background:rgba(255,255,255,0.04)}
+.dir-card::before{content:'';position:absolute;top:0;left:0;width:48px;height:3px;background:var(--gold)}
+.dir-avatar{
+  width:60px;height:60px;border-radius:50%;
+  background:rgba(200,169,81,0.1);border:2px solid rgba(200,169,81,0.3);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Playfair Display',serif;font-size:1.4rem;
+  color:var(--gold);font-weight:700;margin-bottom:1.4rem;
+}
+.dir-name{font-weight:700;font-size:1.1rem;color:var(--white);margin-bottom:0.3rem}
+.dir-role{font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem}
+.dir-din{font-size:0.75rem;color:rgba(255,255,255,0.35)}
+.dir-din span{color:rgba(255,255,255,0.55);font-weight:500}
+.dir-date{font-size:0.75rem;color:rgba(255,255,255,0.35);margin-top:0.3rem}
+.dir-date span{color:rgba(255,255,255,0.55);font-weight:500}
+.dir-past-title{font-size:0.67rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:1rem;font-weight:600;border-top:1px solid rgba(255,255,255,0.06);padding-top:2rem}
+.dir-past-card{
+  border:1px solid rgba(255,255,255,0.07);padding:1.5rem;
+  display:flex;align-items:center;gap:1.2rem;border-radius:3px;
+}
+.dir-past-avatar{
+  width:44px;height:44px;border-radius:50%;
+  background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Playfair Display',serif;font-size:1rem;
+  color:rgba(255,255,255,0.4);font-weight:700;flex-shrink:0;
+}
+.dir-past-name{font-size:0.9rem;color:rgba(255,255,255,0.5);font-weight:600}
+.dir-past-meta{font-size:0.7rem;color:rgba(255,255,255,0.3);margin-top:2px}
+.ceased-badge{display:inline-block;background:rgba(255,100,100,0.1);color:#FC8181;padding:2px 8px;border-radius:999px;font-size:0.62rem;font-weight:600;letter-spacing:0.08em;margin-left:6px}
+
+/* ── CHARGES ── */
+.charges{background:var(--white)}
+.charge-box{
+  border:1.5px solid var(--border);border-radius:4px;overflow:hidden;
+}
+.charge-header{
+  background:var(--navy);padding:1.5rem 2rem;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;
+}
+.ch-title{font-family:'Playfair Display',serif;font-weight:700;font-size:1.1rem;color:var(--white)}
+.ch-amount{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--gold)}
+.ch-amount-label{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:2px}
+.charge-body{padding:2rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.5rem}
+.ch-field .ch-field-label{font-size:0.63rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--text3);margin-bottom:0.35rem}
+.ch-field .ch-field-val{font-size:0.9rem;font-weight:600;color:var(--navy)}
+.ch-active{display:inline-flex;align-items:center;gap:5px;background:#FFF7ED;color:#C05621;padding:3px 10px;border-radius:999px;font-size:0.68rem;font-weight:700}
+.ch-active::before{content:'';width:5px;height:5px;border-radius:50%;background:#F6AD55}
+
+/* ── COMPLIANCE ── */
+.compliance{background:var(--ivory)}
+.comp-table{border:1.5px solid var(--border);border-radius:4px;overflow:hidden}
+.comp-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1.3rem 1.8rem;border-bottom:1px solid var(--border);gap:1rem;
+  background:var(--white);flex-wrap:wrap;
+}
+.comp-row:last-child{border-bottom:none}
+.comp-row:nth-child(even){background:#fdfaf6}
+.comp-key{font-size:0.82rem;color:var(--text2);font-weight:500}
+.comp-v{font-size:0.88rem;font-weight:600;color:var(--navy);text-align:right}
+
+/* ── CONTACT ── */
+.contact{background:var(--navy2)}
+.contact .eyebrow{color:rgba(200,169,81,0.7)}
+.contact .section-h{color:var(--white)}
+.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.contact-item{display:flex;gap:1.2rem;margin-bottom:2.2rem;align-items:flex-start}
+.ci-icon{
+  width:44px;height:44px;flex-shrink:0;
+  border:1.5px solid rgba(200,169,81,0.35);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.1rem;border-radius:2px;background:rgba(200,169,81,0.06);
+}
+.ci-label{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:4px;font-weight:600}
+.ci-val{font-size:0.9rem;color:rgba(255,255,255,0.8);line-height:1.6}
+.ci-val a{color:var(--gold);text-decoration:none}
+.ci-val a:hover{text-decoration:underline}
+.info-box{
+  border:1px solid rgba(200,169,81,0.2);padding:2rem;border-radius:3px;
+  background:rgba(255,255,255,0.02);
+}
+.ib-label{font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:0.5rem;font-weight:600}
+.ib-val{font-family:'Playfair Display',serif;font-size:1rem;color:var(--gold);letter-spacing:0.04em;margin-bottom:1.2rem}
+.ib-divider{height:1px;background:rgba(255,255,255,0.06);margin:1.2rem 0}
+.map-frame{
+  width:100%;height:220px;border:1px solid rgba(200,169,81,0.2);
+  border-radius:3px;overflow:hidden;margin-top:1.5rem;
+}
+.map-frame iframe{width:100%;height:100%;border:none;filter:grayscale(30%)}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--navy);
+  border-top:1px solid rgba(200,169,81,0.12);
+  padding:2.2rem 6%;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+}
+.footer-left{display:flex;align-items:center;gap:10px}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1rem;color:var(--gold);font-weight:700}
+.footer-copy{font-size:0.7rem;color:rgba(255,255,255,0.25);line-height:1.6}
+
+/* ── SCROLL REVEAL ── */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.65s ease,transform 0.65s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .about-layout,.contact-layout{grid-template-columns:1fr}
+  .hero-visual{display:none}
+  .nav-links{display:none}
+  nav{padding:0 4%}
+  section{padding:72px 4%}
+}
+@media(max-width:600px){
+  .hero-metrics{gap:1.8rem}
+  .hero-btns{flex-direction:column}
+  .hero-btns a{text-align:center;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-brand">
+    <div class="nav-logo-mark">RE</div>
+    <div class="nav-brand-text">
+      <div class="nav-brand-name">Reborn Exports</div>
+      <div class="nav-brand-sub">Private Limited</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#company">Company</a></li>
+    <li><a href="#leadership">Leadership</a></li>
+    <li><a href="#compliance">Compliance</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:ows@live.in" class="nav-cta">Get in Touch</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Mumbai, India &nbsp;·&nbsp; Est. 2019 &nbsp;·&nbsp; Active</div>
+    <h1>Wholesale Trade<br/>Delivered with<br/><span class="accent">Purpose.</span></h1>
+    <p class="hero-desc">Reborn Exports Private Limited is a registered wholesale enterprise based in Mumbai, engaged in diversified trade across specialized categories under NIC Code 5190.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-gold">Contact Us ↗</a>
+      <a href="#company" class="btn-ghost">View Company Info</a>
+    </div>
+    <div class="hero-metrics">
+      <div class="metric">
+        <div class="metric-num">2019</div>
+        <div class="metric-label">Incorporated</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num">₹10L</div>
+        <div class="metric-label">Auth. Capital</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num">ROC</div>
+        <div class="metric-label">Mumbai</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num">Active</div>
+        <div class="metric-label">MCA Status</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-card">
+      <div class="hc-title">Company Quick View</div>
+      <div class="hc-row"><span class="hc-key">Status</span><span class="hc-val green">● Active</span></div>
+      <div class="hc-row"><span class="hc-key">CIN</span><span class="hc-val" style="font-size:0.68rem">U51909MH2019PTC326722</span></div>
+      <div class="hc-row"><span class="hc-key">Reg. No.</span><span class="hc-val">326722</span></div>
+      <div class="hc-row"><span class="hc-key">Auth. Capital</span><span class="hc-val gold">₹ 10,00,000</span></div>
+      <div class="hc-row"><span class="hc-key">Paid-up</span><span class="hc-val gold">₹ 10,000</span></div>
+      <div class="hc-row"><span class="hc-key">NIC Code</span><span class="hc-val">5190 — Wholesale</span></div>
+      <div class="hc-row"><span class="hc-key">Lender</span><span class="hc-val">Canara Bank</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-layout">
+    <div class="about-img">
+      <div class="about-watermark">RE</div>
+      <div class="about-since">
+        <div class="about-since-num">2019</div>
+        <div class="about-since-text">Year Founded</div>
+      </div>
+      <div class="about-stamp">Mumbai, India</div>
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">Who We Are</div>
+      <h2 class="section-h">A Trusted Wholesale Enterprise in the Heart of Mumbai</h2>
+      <p class="section-p" style="margin-bottom:1.5rem">Reborn Exports Private Limited is a privately held company incorporated under the Companies Act, 2013. Registered at the Registrar of Companies, Mumbai, we operate in the wholesale trade space covering a variety of goods and specializations.</p>
+      <ul class="about-points">
+        <li><div class="dot">✓</div><span>Engaged in Other Wholesale Trade (NIC 5190) — diversified goods without particular specialization</span></li>
+        <li><div class="dot">✓</div><span>Registered and active under the Ministry of Corporate Affairs, Government of India</span></li>
+        <li><div class="dot">✓</div><span>Secured credit facility of ₹25,00,000 with Canara Bank (Charge created Sept 2023)</span></li>
+        <li><div class="dot">✓</div><span>No prosecutions on record — clean regulatory standing</span></li>
+        <li><div class="dot">✓</div><span>Directors hold active roles across energy, hospitality, wellness, and innovation sectors</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- COMPANY INFO -->
+<section class="info" id="company">
+  <div class="reveal">
+    <div class="eyebrow">Corporate Identity</div>
+    <h2 class="section-h">Company Information</h2>
+    <p class="section-p">Official details as registered with the Ministry of Corporate Affairs, Government of India.</p>
+  </div>
+  <div class="info-grid reveal">
+    <div class="info-cell">
+      <div class="ic-label">CIN</div>
+      <div class="ic-val" style="font-size:0.82rem;word-break:break-all">U51909MH2019PTC326722</div>
+    </div>
+    <div class="info-cell">
+      <div class="ic-label">Company Status</div>
+      <div class="ic-val"><span class="ic-badge">Active</span></div>
+    </div>
+    <div class="info-cell">
+      <div class="ic-label">Registration Number</div>
+      <div class="ic-val">326722</div>
+    </div>
+    <div class="info-cell">
+      <div class="ic-label">Date of Incorporation</div>
+      <div class="ic-val">13 December 2019</div>
+    </div>
+    <div class="info-cell">
+      <div class="ic-label">Class of Company</div>
+      <div class="ic-val">Private</div>
+    </div>
+    <div class="info-cell">
+      <div class="ic-label">Company Category</div>
+      <div class="ic-val">Company Limited by Shares</div>
+    </div>
+    <div class="info-cell">
+      <div class="ic-label">Sub Category</div>
+      <div class="ic-val">Non-Government Company</div>
+    </div>
+    <div class="info-cell">
+      <div class="ic-label">ROC</div>
+      <div class="ic-val">Registrar of Companies, Mumbai</div>
+    </div>
+    <div class="info-cell">
+      <div class="ic-label">Listed on Exchange</div>
+      <div class="ic-val">Unlisted</div>
+    </div>
+    <div class="info-cell">
+      <div class="ic-label">NIC Code</div>
+      <div class="ic-val">5190 — Other Wholesale Trade</div>
+    </div>
+    <div class="info-cell">
+      <div class="ic-label">Authorised Share Capital</div>
+      <div class="ic-val big">₹ 10,00,000</div>
+    </div>
+    <div class="info-cell">
+      <div class="ic-label">Paid-up Share Capital</div>
+      <div class="ic-val big">₹ 10,000</div>
+    </div>
+  </div>
+</section>
+
+<!-- DIRECTORS -->
+<section class="directors" id="leadership">
+  <div class="reveal">
+    <div class="eyebrow">Leadership</div>
+    <h2 class="section-h">Board of Directors</h2>
+    <p class="section-p">The company is guided by experienced directors with active interests across multiple sectors including energy, wellness, and hospitality.</p>
+  </div>
+  <div class="dir-grid reveal">
+    <div class="dir-card">
+      <div class="dir-avatar">KJ</div>
+      <div class="dir-name">Kiran Jain</div>
+      <div class="dir-role">Director</div>
+      <div class="dir-din">DIN: <span>00887368</span></div>
+      <div class="dir-date">Appointed: <span>16 March 2023</span></div>
+    </div>
+    <div class="dir-card">
+      <div class="dir-avatar">AJ</div>
+      <div class="dir-name">Anita Kiran Jain</div>
+      <div class="dir-role">Director</div>
+      <div class="dir-din">DIN: <span>08481531</span></div>
+      <div class="dir-date">Appointed: <span>13 June 2019</span></div>
+    </div>
+  </div>
+  <div class="dir-past-title reveal">Past Directors</div>
+  <div class="dir-past-card reveal" style="max-width:400px">
+    <div class="dir-past-avatar">R</div>
+    <div>
+      <div class="dir-past-name">Rakhi <span class="ceased-badge">Ceased</span></div>
+      <div class="dir-past-meta">DIN: 08481532 &nbsp;·&nbsp; Cessation: 10 March 2023</div>
+    </div>
+  </div>
+</section>
+
+<!-- CHARGES -->
+<section class="charges" id="charges">
+  <div class="reveal">
+    <div class="eyebrow">Secured Loans</div>
+    <h2 class="section-h">Charges &amp; Credit Facilities</h2>
+    <p class="section-p">Active charges (secured loans) registered against the company with the Registrar of Companies.</p>
+  </div>
+  <div class="charge-box reveal">
+    <div class="charge-header">
+      <div>
+        <div class="ch-title">Canara Bank — Secured Charge</div>
+        <div style="font-size:0.72rem;color:rgba(255,255,255,0.4);margin-top:4px">Charge ID: 100825047</div>
+      </div>
+      <div style="text-align:right">
+        <div class="ch-amount-label">Charge Amount</div>
+        <div class="ch-amount">₹ 25,00,000</div>
+      </div>
+    </div>
+    <div class="charge-body">
+      <div class="ch-field">
+        <div class="ch-field-label">Charge Holder</div>
+        <div class="ch-field-val">Canara Bank</div>
+      </div>
+      <div class="ch-field">
+        <div class="ch-field-label">Date of Creation</div>
+        <div class="ch-field-val">14 September 2023</div>
+      </div>
+      <div class="ch-field">
+        <div class="ch-field-label">Date of Modification</div>
+        <div class="ch-field-val">—</div>
+      </div>
+      <div class="ch-field">
+        <div class="ch-field-label">Date of Closure</div>
+        <div class="ch-field-val">—</div>
+      </div>
+      <div class="ch-field">
+        <div class="ch-field-label">Status</div>
+        <div class="ch-field-val"><span class="ch-active">Open</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLIANCE -->
+<section class="compliance" id="compliance">
+  <div class="reveal">
+    <div class="eyebrow">Governance</div>
+    <h2 class="section-h">Annual Compliance</h2>
+    <p class="section-p">Regulatory compliance records as maintained with the Ministry of Corporate Affairs.</p>
+  </div>
+  <div class="comp-table reveal" style="max-width:760px">
+    <div class="comp-row">
+      <span class="comp-key">Company Status</span>
+      <span class="comp-v"><span class="ic-badge">Active</span></span>
+    </div>
+    <div class="comp-row">
+      <span class="comp-key">Last Annual General Meeting (AGM)</span>
+      <span class="comp-v">30 December 2023</span>
+    </div>
+    <div class="comp-row">
+      <span class="comp-key">Last Balance Sheet Filed</span>
+      <span class="comp-v">31 March 2023</span>
+    </div>
+    <div class="comp-row">
+      <span class="comp-key">Number of Members</span>
+      <span class="comp-v">0</span>
+    </div>
+    <div class="comp-row">
+      <span class="comp-key">Prosecution Records</span>
+      <span class="comp-v" style="color:var(--green)">None</span>
+    </div>
+    <div class="comp-row">
+      <span class="comp-key">Outstanding Payments to MSMEs</span>
+      <span class="comp-v" style="color:var(--green)">None on Record</span>
+    </div>
+    <div class="comp-row">
+      <span class="comp-key">Investor / Director Complaints</span>
+      <span class="comp-v" style="color:var(--green)">None</span>
+    </div>
+    <div class="comp-row">
+      <span class="comp-key">Data as of</span>
+      <span class="comp-v">30 June 2024</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-layout">
+    <div class="reveal">
+      <div class="eyebrow">Reach Us</div>
+      <h2 class="section-h">Contact &amp; Location</h2>
+      <div class="contact-item">
+        <div class="ci-icon">📍</div>
+        <div>
+          <div class="ci-label">Registered Address</div>
+          <div class="ci-val">1, Floor 2nd, 6, Amrutanjan House,<br/>R S Navalkar Lane, Tadwadi Chirabazar,<br/>Kalbadevi, Mumbai – 400 002<br/>Maharashtra, India</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-icon">✉️</div>
+        <div>
+          <div class="ci-label">Email Address</div>
+          <div class="ci-val"><a href="mailto:ows@live.in">ows@live.in</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-icon">🏛️</div>
+        <div>
+          <div class="ci-label">Jurisdiction</div>
+          <div class="ci-val">Registrar of Companies, Mumbai<br/>Ministry of Corporate Affairs, India</div>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.5!2d72.8262!3d18.9497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAmrutanjan+House+R+S+Navalkar+Lane+Kalbadevi+Mumbai+400002!5e0!3m2!1sen!2sin!4v1"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="info-box">
+        <div class="ib-label">Corporate Identification Number</div>
+        <div class="ib-val">U51909MH2019PTC326722</div>
+        <div class="ib-divider"></div>
+        <div class="ib-label">Registration Number</div>
+        <div class="ib-val">326722</div>
+        <div class="ib-divider"></div>
+        <div class="ib-label">Business Activity</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.65);line-height:1.7;margin-top:6px">NIC Code 5190 — Other Wholesale Trade: Specialized wholesale not covered in any one category, and wholesale in a variety of goods without particular specialization.</div>
+        <div class="ib-divider"></div>
+        <div class="ib-label">Directors</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.65);margin-top:6px;line-height:1.9">
+          Kiran Jain (DIN: 00887368)<br/>Anita Kiran Jain (DIN: 08481531)
+        </div>
+        <div class="ib-divider"></div>
+        <div class="ib-label">Company Type</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.65);margin-top:6px">Private Limited — Non-Government — Unlisted</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">
+    <div class="nav-logo-mark" style="width:32px;height:32px;font-size:0.82rem">RE</div>
+    <div class="footer-logo">Reborn Exports Pvt. Ltd.</div>
+  </div>
+  <div class="footer-copy">
+    CIN: U51909MH2019PTC326722 &nbsp;·&nbsp; ROC Mumbai &nbsp;·&nbsp; ows@live.in<br/>
+    © 2025 Reborn Exports Private Limited. All rights reserved.
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(
+  es => es.forEach(e => { if(e.isIntersecting) e.target.classList.add('in') }),
+  { threshold: 0.1 }
+);
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
